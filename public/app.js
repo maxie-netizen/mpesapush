@@ -2,13 +2,7 @@ new Vue({
   el: '#app',
   mounted() {
     document.addEventListener('DOMContentLoaded', function() {
-      // Loading screen
-      const loadingScreen = document.getElementById('loadingScreen');
-      setTimeout(() => {
-        loadingScreen.classList.add('hidden');
-      }, 1500);
-
-      // Header scroll effect
+       // Header scroll effect
       const header = document.getElementById('mainHeader');
       window.addEventListener('scroll', () => {
         if (window.scrollY > 50) {
